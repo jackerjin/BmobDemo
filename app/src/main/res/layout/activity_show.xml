@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tarena.bmobdemo.ui.ShowActivity">
+<LinearLayout
+    android:id="@+id/ll_header"
+    android:background="#f3f3f3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:textColor="#d4237a"
+        android:gravity="left|center_vertical"
+        android:text="浏览帖子"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_show_add"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_show_refresh"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/shuaxin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_show_tip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right"
+            android:src="@drawable/new_message_tip"
+            android:layout_width="10dp"
+            android:visibility="invisible"
+            android:layout_height="10dp" />
+    </FrameLayout>
+</LinearLayout>
+   <ListView
+       android:id="@+id/show_listView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></ListView>
+</LinearLayout>

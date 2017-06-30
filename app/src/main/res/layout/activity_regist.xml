@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tarena.bmobdemo.ui.RegistActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <EditText
+        android:id="@+id/regist_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="姓名"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/regist_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/regist_username"
+        android:layout_below="@+id/regist_username"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/regist_password"
+        android:layout_marginTop="32dp"
+        android:id="@+id/radioGroup" >
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男"
+        android:checked="true"
+        android:layout_below="@+id/regist_password"
+        android:layout_alignStart="@+id/regist_password" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"
+        android:layout_alignBaseline="@+id/radioButton"
+        android:layout_alignBottom="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton" />
+    </RadioGroup>
+    <Button
+
+        android:id="@+id/regist_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="注册" />
+</RelativeLayout>
